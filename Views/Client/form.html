@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/tailwind.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="bg-gradient-to-br from-green-400 to-blue-600 border-gray-200 px-4 lg:px-6 py-2.5"
+      >
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img
+              src="https://flowbite.com/docs/images/logo.svg"
+              class="h-8"
+              alt="Flowbite Logo"
+            />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap"
+              >GINGER 🫚</span
+            >
+          </a>
+          <div
+            class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+          >
+            <button
+              type="button"
+              class="flex text-sm rounded-full md:me-0"
+              id="user-menu-button"
+              aria-expanded="false"
+              data-dropdown-toggle="user-dropdown"
+              data-dropdown-placement="bottom"
+            >
+              <img
+                src="https://i.pinimg.com/enabled_lo/564x/7c/bb/5c/7cbb5c5ac31d7b981bb303ad30bc6992.jpg"
+                alt="Photo Utilisateur"
+                class="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-blue-500"
+              />
+              <div class="pl-2 sm:pl-4 py-1 ml-2">
+                <p class="text-gray-700 text-xs sm:text-sm font-bold">
+                  RORONOA
+                </p>
+                <p class="text-gray-700 text-xs sm:text-sm font-bold">ZORO</p>
+              </div>
+            </button>
+            <!-- Dropdown menu -->
+            <div
+              class="z-50 hidden my-4 text-base list-none bg-white rounded-lg shadow"
+              id="user-dropdown"
+            >
+              <div class="px-4 py-2 text-center">
+                <img
+                  class="w-16 h-16 rounded-full mx-auto"
+                  src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2"
+                  alt="User avatar"
+                />
+                <p class="mt-2 font-semibold">RORONOA ZORO</p>
+              </div>
+              <a
+                href=""
+                class="block px-4 py-2 text-sm text-center text-gray-700 hover:bg-gray-100"
+                >MODIFIER</a
+              >
+              <a
+                href=""
+                class="block px-4 py-2 text-sm text-center text-gray-700 hover:bg-gray-100"
+                >DECONNEXION</a
+              >
+            </div>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-user"
+          >
+            <ul
+              class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+            >
+              <li>
+                <a
+                  href="/clients"
+                  class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group"
+                >
+                  <svg
+                    class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M13 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+
+                  <span class="ms-3">Client</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/articles"
+                  class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group"
+                >
+                  <svg
+                    class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 18 18"
+                  >
+                    <path
+                      d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z"
+                    />
+                  </svg>
+                  <span class="flex-1 ms-3 whitespace-nowrap">Article</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/dettes"
+                  class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group"
+                >
+                  <svg
+                    class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 18 20"
+                  >
+                    <path
+                      d="M17 5.923A1 1 0 0 0 16 5h-3V4a4 4 0 1 0-8 0v1H2a1 1 0 0 0-1 .923L.086 17.846A2 2 0 0 0 2.08 20h13.84a2 2 0 0 0 1.994-2.153L17 5.923ZM7 9a1 1 0 0 1-2 0V7h2v2Zm0-5a2 2 0 1 1 4 0v1H7V4Zm6 5a1 1 0 1 1-2 0V7h2v2Z"
+                    />
+                  </svg>
+                  <span class="flex-1 ms-3 whitespace-nowrap">Dette</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/users"
+                  class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group"
+                >
+                  <svg
+                    class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 18"
+                  >
+                    <path
+                      d="M14 2a3.963 3.963 0 0 0-1.4.267 6.439 6.439 0 0 1-1.331 6.638A4 4 0 1 0 14 2Zm1 9h-1.264A6.957 6.957 0 0 1 15 15v2a2.97 2.97 0 0 1-.184 1H19a1 1 0 0 0 1-1v-1a5.006 5.006 0 0 0-5-5ZM6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z"
+                    />
+                  </svg>
+
+                  <span class="flex-1 ms-3 whitespace-nowrap">Users</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div
+      class="px-5 w-2/5 mt-5 mb-5 mx-auto border-2 bg-gradient-to-br from-green-400 to-blue-600 py-5 rounded-lg"
+    >
+      <div class="titre">
+        <h1
+          class="text-white mb-5 pb-3 text-4xl text-center font-bold border-b-2 border-stone-50"
+        >
+          Ajouter un client
+        </h1>
+        <img src="" alt="" />
+      </div>
+      <form id="form-client" method="post">
+        <div class="w-full flex gap-3 justify-center px-8">
+          <div class="w-full">
+            <input
+              name="surnom"
+              class="rounded capitalize shadow-2xl p-3 w-full outline-none focus:border-solid focus:border-[1px] border-[#035ec5] placeholder:text-gray-300"
+              type="text"
+              placeholder="surnom"
+            />
+          </div>
+
+          <div class="w-full">
+            <input
+              name="telephone"
+              class="rounded capitalize shadow-2xl p-3 w-full outline-none focus:border-solid focus:border-[1px] border-[#035ec5] placeholder:text-gray-300"
+              type="text"
+              step="0.01"
+              placeholder="eg : 77 321 54 76"
+            />
+          </div>
+        </div>
+        <div class="w-full flex gap-3 mx-auto justify-center px-8 mt-6">
+          <div class="w-full">
+            <textarea
+              name="adresse"
+              class="rounded capitalize shadow-2xl p-3 w-full h-12 outline-none focus:border-solid focus:border-[1px] border-[#035ec5] placeholder:text-gray-300"
+              placeholder="adresse"
+            ></textarea>
+            <div class="flex row items-center w-3/4 mt-3">
+              <p class="font-bold">Créer un Compte :</p>
+              <label
+                class="relative inline-flex items-center cursor-pointer ml-3"
+              >
+                <input
+                  class="sr-only peer"
+                  value=""
+                  type="checkbox"
+                  id="switch-user"
+                />
+                <div
+                  class="group peer ring-0 bg-gray-50 border-2 border-gray-900 rounded-full outline-none duration-700 after:duration-200 w-20 h-8 shadow-md peer-checked:bg-white peer-focus:outline-none after:content-[''] after:rounded-full after:absolute after:bg-gray-900 after:outline-none after:h-6 after:w-6 after:top-1 after:left-1 peer-checked:after:translate-x-12 peer-hover:after:scale-95"
+                >
+                  <svg
+                    y="0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0"
+                    width="100"
+                    viewBox="0 0 100 100"
+                    preserveAspectRatio="xMidYMid meet"
+                    height="100"
+                    class="absolute top-1 left-12 fill-red-600 w-6 h-6"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M30,46V38a20,20,0,0,1,40,0v8a8,8,0,0,1,8,8V74a8,8,0,0,1-8,8H30a8,8,0,0,1-8-8V54A8,8,0,0,1,30,46Zm32-8v8H38V38a12,12,0,0,1,24,0Z"
+                    ></path>
+                  </svg>
+
+                  <svg
+                    y="0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0"
+                    width="100"
+                    viewBox="0 0 100 100"
+                    preserveAspectRatio="xMidYMid meet"
+                    height="100"
+                    class="absolute top-1 left-1 fill-green-600 w-6 h-6"
+                  >
+                    <path
+                      d="M50,18A19.9,19.9,0,0,0,30,38v8a8,8,0,0,0-8,8V74a8,8,0,0,0,8,8H70a8,8,0,0,0,8-8V54a8,8,0,0,0-8-8H38V38a12,12,0,0,1,23.6-3,4,4,0,1,0,7.8-2A20.1,20.1,0,0,0,50,18Z"
+                      class="svg-fill-primary"
+                    ></path>
+                  </svg>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div id="user-form" class="mt-6 none">
+          <div class="w-full flex gap-3 justify-center px-8">
+            <div class="w-full">
+              <input
+                name="prenom"
+                class="user-field rounded capitalize shadow-2xl p-3 w-full outline-none focus:border-solid focus:border-[1px] border-[#035ec5] placeholder:text-gray-300"
+                type="text"
+                placeholder="prenom"
+              />
+            </div>
+
+            <div class="w-full">
+              <input
+                name="nom"
+                class="user-field rounded capitalize shadow-2xl p-3 w-full outline-none focus:border-solid focus:border-[1px] border-[#035ec5] placeholder:text-gray-300"
+                type="text"
+                step="0.01"
+                placeholder="nom"
+              />
+            </div>
+          </div>
+
+          <div class="w-full flex gap-3 justify-center px-8 mt-6">
+            <div class="w-full">
+              <input
+                name="login"
+                class="user-field rounded capitalize shadow-2xl p-3 w-full outline-none focus:border-solid focus:border-[1px] border-[#035ec5] placeholder:text-gray-300"
+                type="text"
+                placeholder="eg : sidy@gmail.com"
+              />
+            </div>
+
+            <div class="w-full">
+              <input
+                name="password"
+                class="user-field rounded capitalize shadow-2xl p-3 w-full outline-none focus:border-solid focus:border-[1px] border-[#035ec5] placeholder:text-gray-300"
+                type="password"
+                step="0.01"
+                placeholder="password"
+              />
+            </div>
+          </div>
+          <div class="flex-col">
+            <label
+              for="file"
+              class="custum-file-upload mt-8 mx-auto bg-gray-500"
+            >
+              <div class="icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill=""
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10 1C9.73478 1 9.48043 1.10536 9.29289 1.29289L3.29289 7.29289C3.10536 7.48043 3 7.73478 3 8V20C3 21.6569 4.34315 23 6 23H7C7.55228 23 8 22.5523 8 22C8 21.4477 7.55228 21 7 21H6C5.44772 21 5 20.5523 5 20V9H10C10.5523 9 11 8.55228 11 8V3H18C18.5523 3 19 3.44772 19 4V9C19 9.55228 19.4477 10 20 10C20.5523 10 21 9.55228 21 9V4C21 2.34315 19.6569 1 18 1H10ZM9 7H6.41421L9 4.41421V7ZM14 15.5C14 14.1193 15.1193 13 16.5 13C17.8807 13 19 14.1193 19 15.5V16V17H20C21.1046 17 22 17.8954 22 19C22 20.1046 21.1046 21 20 21H13C11.8954 21 11 20.1046 11 19C11 17.8954 11.8954 17 13 17H14V16V15.5ZM16.5 11C14.142 11 12.2076 12.8136 12.0156 15.122C10.2825 15.5606 9 17.1305 9 19C9 21.2091 10.7909 23 13 23H20C22.2091 23 24 21.2091 24 19C24 17.1305 22.7175 15.5606 20.9844 15.122C20.7924 12.8136 18.858 11 16.5 11Z"
+                      fill=""
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="text">
+                <span>Click to upload image</span>
+              </div>
+              <input class="user-field" name="image" id="file" type="file" />
+            </label>
+          </div>
+        </div>
+        <button
+          type="submit"
+          class="bg-white flex justify-center align-middle mx-auto font-medium text-xl rounded px-8 py-2 text-center mt-8 w-1/2"
+        >
+          Créer
+        </button>
+      </form>
+    </div>
+    <script src="/scripts/Client/create.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  </body>
+</html>

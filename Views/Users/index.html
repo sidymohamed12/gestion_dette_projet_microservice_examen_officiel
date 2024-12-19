@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="bg-gradient-to-br from-green-400 to-blue-600 border-gray-200 px-4 lg:px-6 py-2.5"
+      >
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img
+              src="https://flowbite.com/docs/images/logo.svg"
+              class="h-8"
+              alt="Flowbite Logo"
+            />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap"
+              >GINGER 🫚</span
+            >
+          </a>
+          <div
+            class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+          >
+            <button
+              type="button"
+              class="flex text-sm rounded-full md:me-0"
+              id="user-menu-button"
+              aria-expanded="false"
+              data-dropdown-toggle="user-dropdown"
+              data-dropdown-placement="bottom"
+            >
+              <img
+                src="https://i.pinimg.com/enabled_lo/564x/7c/bb/5c/7cbb5c5ac31d7b981bb303ad30bc6992.jpg"
+                alt="Photo Utilisateur"
+                class="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-blue-500"
+              />
+              <div class="pl-2 sm:pl-4 py-1 ml-2">
+                <p class="text-gray-700 text-xs sm:text-sm font-bold">
+                  RORONOA
+                </p>
+                <p class="text-gray-700 text-xs sm:text-sm font-bold">ZORO</p>
+              </div>
+            </button>
+            <!-- Dropdown menu -->
+            <div
+              class="z-50 hidden my-4 text-base list-none bg-white rounded-lg shadow"
+              id="user-dropdown"
+            >
+              <div class="px-4 py-2 text-center">
+                <img
+                  class="w-16 h-16 rounded-full mx-auto"
+                  src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2"
+                  alt="User avatar"
+                />
+                <p class="mt-2 font-semibold">RORONOA ZORO</p>
+              </div>
+              <a
+                href=""
+                class="block px-4 py-2 text-sm text-center text-gray-700 hover:bg-gray-100"
+                >MODIFIER</a
+              >
+              <a
+                href=""
+                class="block px-4 py-2 text-sm text-center text-gray-700 hover:bg-gray-100"
+                >DECONNEXION</a
+              >
+            </div>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-user"
+          >
+            <ul
+              class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+            >
+              <li>
+                <a
+                  href="/clients"
+                  class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group"
+                >
+                  <svg
+                    class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M13 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+
+                  <span class="ms-3">Client</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/articles"
+                  class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group"
+                >
+                  <svg
+                    class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 18 18"
+                  >
+                    <path
+                      d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z"
+                    />
+                  </svg>
+                  <span class="flex-1 ms-3 whitespace-nowrap">Article</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/dettes"
+                  class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group"
+                >
+                  <svg
+                    class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 18 20"
+                  >
+                    <path
+                      d="M17 5.923A1 1 0 0 0 16 5h-3V4a4 4 0 1 0-8 0v1H2a1 1 0 0 0-1 .923L.086 17.846A2 2 0 0 0 2.08 20h13.84a2 2 0 0 0 1.994-2.153L17 5.923ZM7 9a1 1 0 0 1-2 0V7h2v2Zm0-5a2 2 0 1 1 4 0v1H7V4Zm6 5a1 1 0 1 1-2 0V7h2v2Z"
+                    />
+                  </svg>
+                  <span class="flex-1 ms-3 whitespace-nowrap">Dette</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/users"
+                  class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group"
+                >
+                  <svg
+                    class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 18"
+                  >
+                    <path
+                      d="M14 2a3.963 3.963 0 0 0-1.4.267 6.439 6.439 0 0 1-1.331 6.638A4 4 0 1 0 14 2Zm1 9h-1.264A6.957 6.957 0 0 1 15 15v2a2.97 2.97 0 0 1-.184 1H19a1 1 0 0 0 1-1v-1a5.006 5.006 0 0 0-5-5ZM6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z"
+                    />
+                  </svg>
+
+                  <span class="flex-1 ms-3 whitespace-nowrap">Users</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="margin-auto mt-10 p-5">
+        <div class="flex justify-end">
+          <a
+            href="/users/form"
+            class="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl font-medium rounded-lg text-sm text-center px-8 py-2"
+          >
+            Add user
+          </a>
+        </div>
+
+        <div class="sm:rounded-lg shadow-xl mt-4">
+          <table
+            class="w-full mb-5 text-sm text-left rtl:text-right text-gray-500"
+          >
+            <thead
+              class="text-sm text-white uppercase bg-gradient-to-br from-green-400 to-blue-600"
+            >
+              <tr>
+                <th scope="col" class="px-6 py-3">
+                  <p>Prenom</p>
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  <p>Nom</p>
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  <p>Login</p>
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  <p>Role</p>
+                </th>
+
+                <th scope="col" class="px-6 py-3">
+                  <p>Action</p>
+                </th>
+              </tr>
+            </thead>
+
+            <tbody id="liste-users"></tbody>
+          </table>
+          <!-- Pagination -->
+          <!-- <nav
+        aria-label="Page navigation example"
+        class="mt-3 flex justify-end mb-5"
+        >
+        <ul class="flex items-center -space-x-px h-8 text-sm">
+            {% si currentPage > 1 %}
+            <li>
+            <a
+                href="{{ path('article.index', { page: currentPage - 1 }) }}"
+                class="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700"
+            >
+                <span class="sr-only">Previous</span>
+                <svg
+                class="w-2.5 h-2.5 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+                >
+                <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 1 1 5l4 4"
+                />
+                </svg>
+            </a>
+            </li>
+            {% fin %} {% for i in 1..totalPages %}
+            <li>
+            <a
+                href="{{ path('article.index', { page: i }) }}"
+                class="flex items-center justify-center px-3 h-8 leading-tight border {% if i == currentPage %} z-10 text-white border-blue-300 bg-gradient-to-br from-green-400 to-blue-600 hover:bg-blue-200 hover:text-blue-300 {% else %}text-gray-500 bg-white border-gray-300 hover:bg-gray-100 hover:text-gray-700 {% endif %}"
+            >
+                {{ i }}
+            </a>
+            </li>
+            {% endfor %} {% if currentPage < totalPages %}
+            <li>
+            <a
+                href="{{ path('article.index', { page: currentPage + 1 }) }}"
+                class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700"
+            >
+                <span class="sr-only">Next</span>
+                <svg
+                class="w-2.5 h-2.5 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+                >
+                <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 9 4-4-4-4"
+                />
+                </svg>
+            </a>
+            </li>
+            {% endif %}
+        </ul>
+        </nav> -->
+        </div>
+      </div>
+    </main>
+    <script src="/scripts/Users/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  </body>
+</html>
